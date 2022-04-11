@@ -1,0 +1,275 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color:hsl(229, 57%, 11%);
+  background-image: url(bg-mobile.png);
+  background-repeat:repeat;
+  background-size: cover;
+  height: 950px;
+  overflow: hidden;
+  font-family: 'via férrea', sans-serif;
+  font-size: 14px;
+}
+
+#principal{
+  height: 667px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.after{
+  visibility: hidden;
+}
+
+.container
+{
+  background-color: blue;
+  width: 90%;
+  height: 200px;
+  border-radius: 10px 100px 10px 10px;
+  background-color: hsl(228, 56%, 26%);
+  margin-bottom: 30px;
+}
+
+.container section img:nth-child(1){
+  margin-left: 30px;
+  display: flex;
+  margin-top: 30px;
+
+}
+
+.container section img:nth-child(2){
+  height: 25px;
+    width: 25px;
+    margin-left: 30px;
+    margin-top: 30px;
+    padding: 12px;
+    border-radius: 10px;
+    background-color:hsl(229, 57%, 11%);
+}
+
+.container section img:nth-child(3){
+  height: 25px;
+    width: 25px;
+    margin-left: 5px;
+    margin-top: 30px;
+    padding: 12px;
+    border-radius: 10px;
+    background-color:hsl(229, 57%, 11%);
+}
+
+.container section img:nth-child(4){
+  height: 25px;
+    width: 25px;
+    margin-left: 5px;
+    margin-top: 30px;
+    padding: 12px;
+    border-radius: 10px;
+    background-color:hsl(229, 57%, 11%);
+}
+
+.container2{
+  width: 90%;
+  height: 120px;
+  border-radius: 10px;
+  background-color: hsl(228, 56%, 26%);
+  display: flex;
+  justify-content: center;
+
+}
+
+.container3{
+  width: 90%;
+}
+
+.content1{
+  color: rgba(255, 255, 255, 0.432);
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.content1 strong{
+  color: rgba(255, 255, 255, 0.671);
+  margin-left: 5px;
+  margin-right: 5px;
+  
+}
+
+.content3{
+  font-size: 10px;
+}
+
+.content4{
+  position: absolute;
+  margin-top: 3px;
+  
+}
+
+.content5{
+  margin-left: 12px;
+}
+
+.container4{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 60%;
+  height: 60px;
+  border-radius: 10px;
+  margin-top:55px;
+  margin-left: 60px;
+  font-weight: bold;
+}
+
+.content6, .content7, .content8{
+  font-size: 28px;
+}
+
+.content7{
+  font-size: 33px;
+}
+
+.content8{
+  margin-top: 7px;
+  position: absolute;
+}
+
+.content9{
+  color: rgba(146, 145, 145, 0.959);
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-left: 20px;
+ 
+}
+
+.container5{
+  display: flex;
+  border-radius: 10px;
+  width: 100%;
+  height: 17px;
+  margin-top: -110px;
+  background-color:hsl(229, 57%, 11%);
+}
+
+.content10{
+  width: 60%;
+  height: 17px;
+  border-radius: 10px;
+  background-image: linear-gradient(hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+}
+
+.content11{
+  width: 5%;
+  height: 15px;
+  border-radius: 10px;
+  background-color: white;
+  margin-left: -17px;
+  margin-top: 1px;
+
+}
+
+.container6{
+  color: white;
+  font-size: 13px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (min-width:401px){
+  .content11{
+    margin-left: -19px;
+    width: 4%;
+  }
+}
+
+@media (min-width:600px){
+  .content11{
+    width: 3%;
+    margin-left:-18px;
+
+ }
+
+
+@media (min-width:800px){
+  body{
+    background-image:url(bg-desktop.png);
+    background-repeat: no-repeat;
+    background-position: 0% 50%;
+    background-size: contain;
+
+  }
+
+  #principal{
+    display: flex;
+    flex-flow: row nowrap;
+    width: 70%;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+  }
+
+  .container
+  {
+    width: 40%;
+    height: 165px;
+  }
+
+  .container2
+  {
+    width: 50%;
+    height: 135px;
+  }
+
+
+  .container4{
+    margin-top: -100px;
+    width: 15%;
+    margin-left: 12em;
+    position: absolute;
+  }
+
+
+  .container5{
+    margin-top: 10px;
+  }
+
+  .container6{
+    margin-top: 15px;
+  }
+
+  .content11
+  {
+    width: 5%;
+    margin-left: -15px;
+  }
+}
+
+@media (min-width:806px){
+
+  .container4{
+    width: 15%;
+    margin-left: 130px;
+  }
+
+  .content11{
+    width: 6%;
+    margin-left: -18px;
+  }
+  }
+
+@media (min-width:1100px){
+  .container4{
+    width: 10%;
+    margin-left: 300px;
+  }
+  .content11{
+    width: 4%;
+    margin-left: -19px;
+  }
+}
+}
